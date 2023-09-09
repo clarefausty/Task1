@@ -2,7 +2,8 @@ const navBarLink = document.getElementsByClassName("navbar-links")[0]
 const menuIcon = document.getElementsByClassName("menu-icon")[0]
 const element = document.querySelector('[data-testid="currentDayOfTheWeek"]');
 const currentTime = document.querySelector('[data-testid="currentUTCTime"]');
-
+const userName = document.querySelector('[data-testid="Clarefausty"]');
+const trackName = document.querySelector('[data-testid="myTrack"]');
 
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -15,6 +16,8 @@ menuIcon.addEventListener('click', function(){
 })
 element.innerHTML = days[currentDay]
 currentTime.innerHTML = now.getTime()
+userName.innerHTML = "Achilonu Chinwendu Faustina"
+trackName.innerHTML = "Frontend Development"
 
 
 
